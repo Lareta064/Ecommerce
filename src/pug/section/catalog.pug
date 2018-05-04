@@ -1,0 +1,31 @@
+//catalog section
+.container
+  .catalog-block
+    // Фильтр работ
+    .filter-block
+      ul.filter-block__block
+        li.filter-block__element
+          span.filter-block__button.filter-block__button--active.filter(data-filter='.featured') Featured
+        li.filter-block__element
+          span.filter-block__button.filter(data-filter='.bestSellers') Best Sellers
+        li.filter-block__element
+          span.filter-block__button.filter(data-filter='.new') New Arrivals
+        li.filter-block__element
+          span.filter-block__button.filter(data-filter='.sale') Sale
+
+    
+    #catalog-cards
+      +div('featured','card1.jpg', 'Swissgear Bag', '$50.99')
+      +div('featured new','card2.png', 'The north jacket', '$200.99')
+      +div('featured bestSellers new','card3.jpg', 'Borealis Backpack Cosmic', '$125.99')
+      +div('featured sale','card4.jpg', 'Swissgear Bag', '$50.99')
+      +div('featured new','card5.jpg', 'The north jacket', '$200.99')
+      +div('featured bestSellers','card6.jpg', 'Swissgear Bag', '$50.99')
+      +div('featured new','card7.jpg', 'Borealis Backpack Cosmic', '$125.99')
+      +div('featured bestSellers sale','card8.jpg', 'Swissgear Bag', '$50.99')
+//end catalog section
+        
+
+
+
+              

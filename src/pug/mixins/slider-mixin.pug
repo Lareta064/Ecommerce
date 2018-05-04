@@ -1,0 +1,6 @@
+//-миксин для изображений-переключателей справа от слайдера в шапке
+mixin slider-toggle-item(imgsrc, btn_title)
+	.slider-toggle-item(style="background-image:url(../img/slider/"+ imgsrc +')')
+		.slider-toggle-item_content 
+			button(type="button").btn.btn-toggle= btn_title
+			p Summer collection 2014

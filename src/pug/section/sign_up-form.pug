@@ -1,0 +1,25 @@
+//-#signUp.modal.p-3
+	h4.text-center Sign_Up
+	forme#signUpForm
+		input(type="text" name="userName" id="userName" placeholder="Name")
+		input(type="password" name="password" id="password" placeholder="Password")
+		button.btn.btn-signUp(type='submit') Sign Up-//
+
+
+// Modal
+#exampleModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+	.modal-dialog(role='document')
+		.modal-content.signUp-content
+			.modal-header
+				h5#exampleModalLabel.modal-title Sugn_Up
+				button.close.signUp-close(type='button', data-dismiss='modal', aria-label='Close')
+					span(aria-hidden='true')
+						i.far.fa-times-circle
+			.modal-body
+				forme#signUpForm
+					input(type="text" name="userName" id="userName" placeholder="Форма еще пока не подключна")
+					input(type="password" name="password" id="password" placeholder="Больше внимания уделяла Pug :)")
+		
+			.modal-footer
+				//-button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+				button.btn.btn-signUp(type='button') Sugn Up

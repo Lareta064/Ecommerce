@@ -1,0 +1,11 @@
+mixin div(filterName, imgsrc, productHead, productPrice)
+	div(class= 'catalog-item mix'+' '+ filterName)
+		.catalog-item__image
+			img(src='img/catalog/'+ imgsrc)
+			.catalog-item__buttons
+				a(href="#").btn-view.card-btn View large
+				a(href="#").btn-show.card-btn Show info
+				a(href="#").btn-add.card-btn Add to cart
+		.catalog-item__title
+			h5= productHead
+			p= productPrice

@@ -1,0 +1,38 @@
+@card_button-bg: #4bb046;
+@white: #ffffff;
+@head_text: #333333;
+@dark_grey: #18191b;
+@menu_text: #6d6d6d;
+@red: #db484b;
+@card_price-text: #5cb85c;
+@basic_text: #3d3d3d;
+@blue: #7a68e1;
+@middle_grey: #26272b;
+@submit-bg: #2e2e2e;
+
+.flex() {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+/****МЕДИА-ЗАПРОСЫ****/
+.screen-480(@rules){
+	@media (min-width: 480px){
+		@rules();
+	}
+}
+.screen-sm(@rules){
+	@media (min-width: 768px){
+		@rules();
+	}
+}
+.screen-md(@rules){
+	@media (min-width: 992px){
+		@rules();
+	}
+}
+.screen-lg(@rules){
+	@media (min-width: 1200px){
+		@rules();
+	}
+}
