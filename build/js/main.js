@@ -1,8 +1,4 @@
-(function($){
-        $(window).on("load",function(){
-            $(".content").mCustomScrollbar();
-        });
-    })(jQuery);
+
 $(document).ready(function() {
 	
 	$('.carousel').carousel({
@@ -25,4 +21,8 @@ $(document).ready(function() {
  		loop:true,
 	});;
 })
-	
+/*(function($){
+        $(window).on("load",function(){
+            $(".content").mCustomScrollbar();
+        });
+    })(jQuery);	*/
